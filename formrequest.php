@@ -175,7 +175,7 @@
 				<label>&nbsp;</label>
 				<div>
 					<p>* - Поля обязательны для заполнения</p>
-					<p><button id="send" class="button medium red">Отправить сообщение</button></p>
+					<p><button id="send" class="button medium red">Отправить заявку</button></p>
 				</div>
 			</div>
 			

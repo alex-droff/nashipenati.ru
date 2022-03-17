@@ -1,7 +1,7 @@
 <?php
 error_reporting(0);
 header('Access-Control-Allow-Origin: http://cmsch.ru/');
- header('Access-Control-Allow-Origin: http://www.cmsch.ru/');
+header('Access-Control-Allow-Origin: http://www.cmsch.ru/');
 
 define('INCLUDE_CHECK',true);
 require_once 'Mobile_Detect.php';
@@ -171,7 +171,7 @@ if($_POST['submit']=='Войти')
 	$_SESSION['msg']['login-err'] = implode('<br />',$err);
 	// Save the error messages in the session
 
-	 $err[]='Не правильный логин/пароль!'; } 	else {	if ($row['statuser']=='2') { $_SESSION = array(); 	session_destroy();	 header("Location: http://".$_POST['username'].".cmsch.ru/delete/");  } else { if ($row['countlogin']==0)  { //header("Location: http://www.cmsch.ru/settings/");
+	 $err[]='Неправильный логин/пароль!'; } 	else {	if ($row['statuser']=='2') { $_SESSION = array(); 	session_destroy();	 header("Location: http://".$_POST['username'].".cmsch.ru/delete/");  } else { if ($row['countlogin']==0)  { //header("Location: http://www.cmsch.ru/settings/");
 	   } else { header("Location: /users/profile/"); 
 	    } } }
 	
@@ -202,27 +202,27 @@ else if($_POST['submit']=='Регистрация')
 	
 		// If there are no errors
 		$emailreg = $_POST['email'];
-$query = sprintf("SELECT * FROM users WHERE email='%s'", $mysqli->real_escape_string($emailreg));
-//echo $query;
-$result = $mysqli->query($query);
+		$query = sprintf("SELECT * FROM users WHERE email='%s'", $mysqli->real_escape_string($emailreg));
+		//echo $query;
+		$result = $mysqli->query($query);
 
-if(!$result) {
-   $err[]="Что-то пошло не так...!"; 
-} else {
-    if($result->num_rows > 0) {
-        $err[]="Этот email уже занят!"; 
-    } else {
-        // Good to go...
-    }
-}
-/*
-$emailreg = $_POST['username'];
-$query = sprintf("SELECT * FROM users WHERE username='%s'", $mysqli->real_escape_string($emailreg));
-//echo $query;
-$result = $mysqli->query($query);
- if($result->num_rows > 0) {
-      $err[]='Это имя уже занято!';
-    }  
+		if(!$result) {
+		$err[]="Что-то пошло не так...!"; 
+		} else {
+			if($result->num_rows > 0) {
+				$err[]="Этот email уже занят!"; 
+			} else {
+				// Good to go...
+			}
+		}
+		/*
+		$emailreg = $_POST['username'];
+		$query = sprintf("SELECT * FROM users WHERE username='%s'", $mysqli->real_escape_string($emailreg));
+		//echo $query;
+		$result = $mysqli->query($query);
+		if($result->num_rows > 0) {
+			$err[]='Это имя уже занято!';
+			}  
 	*/
 
 		if(!count($err))
