@@ -43,6 +43,7 @@ if (isset($_SESSION['id'])) {
 
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/style-2021.css">
 	<link rel="stylesheet" type="text/css" href="/css/skeleton.css">
 
 	<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox-1.3.4.css">
@@ -118,25 +119,55 @@ if (isset($_SESSION['id'])) {
 <body>
 	<style>
 		.frame_window{
-			padding: 20px;
+			padding: 3rem;
 		}
 
 		.frame_window h3{
 			margin: 0 0 1rem;
 			font-family: 'Phenomena';
-			font-size: 2rem;
-			line-height: 1.1;
+			font-size: 3.2rem;
+			line-height: 1;
 		}
 
 		.frame_window h4{
 			margin: 0 0 1rem;
-			font-family: 'RedRing';
+			font-family: 'Phenomena';
+			font-size: 2rem;
+			color:#878d89;
+		}
+
+		.employee-info p,
+		.employee-info li{
+			line-height: 1.6;
 			font-size: 1rem;
 		}
 
-		.employee-info p{
-			line-height: 1.6;
-			font-size: 1rem;
+		.employee-info li{
+			margin-bottom:1em;
+		}
+
+		.employee-title {
+			display: grid;
+			grid-template-columns: 40% auto;
+			gap: 3rem;
+			background: url(../images/i-2021/curve.svg) bottom 10px left 0px repeat-x;
+			background-size: auto 40px;
+			padding-bottom: 70px;
+		}
+
+		.employee-title>div:first-of-type{
+			display:flex;
+			justify-content:center;
+		}
+
+		.employee_pic {
+			border-radius: 50%;
+			height: 230px;
+			width:230px;
+		}
+
+		.employee-info ul{
+			padding: 0;
 		}
 	</style>
 
@@ -168,17 +199,20 @@ if (isset($_SESSION['id'])) {
 				} else {
 					$itemview = "";
 				} ?>
-				<div>
+				<div class="employee-title">
+					<div>
 					<? if (strlen($itemview) >= 1) { ?>
-						<img src="/ckfinder/userfiles/images/employee/<?= $itemview; ?>" name="aboutme" border="0" style=" max-width:200px; max-height:400px; float:left; margin-right: 20px;">
+						<div class="employee_pic" style="background:url('/ckfinder/userfiles/images/employee/<?= $itemview; ?>') center center no-repeat;background-size:cover"></div>
 					<? } else { ?>
-						<img src="/images/preview.png" name="aboutme" border="0" style=" max-width:200px; max-height:400px; float:left; margin-right: 20px;">
+						<div class="employee_pic" style="background:url('/images/preview.png') center center no-repeat;background-size:cover"></div>
 					<? } ?>
+					</div>
+					<div>
 					<h3><?= $item->last_name; ?><br><?= $item->name . " " . $item->middle_name; ?></h3>
 					<h4><?= $item->position; ?></h4>
-					<div class="employee-info"><?= $item->bio_full; ?></div>
+					</div>
 				</div>
-
+				<div class="employee-info"><?= $item->bio_full; ?></div>
 
 
 			<? } ?>

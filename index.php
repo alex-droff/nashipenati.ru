@@ -191,8 +191,7 @@ require_once "topfile-head.php"; ?>
 									} ?>
 									<div class="stuff-item">
 										<a href="teacher.php?idt=<?= $item->id; ?>" class="iframe">
-											<div class="stuff-thumbnail" style="background:<? if (strlen($itemview) >= 1) echo "url('/ckfinder/userfiles/images/employee/" . $itemview . "')";
-																							else echo "url('/images/preview.png')"; ?> center top no-repeat;background-size:cover">
+											<div class="stuff-thumbnail" style="background:<? if (strlen($itemview) >= 1) echo "url('/ckfinder/userfiles/images/employee/" . $itemview . "')";else echo "url('/images/preview.png')"; ?> center top no-repeat;background-size:cover">
 											</div>
 											<div class="stuff-name">
 												<span><?= $item->last_name; ?></span><br>

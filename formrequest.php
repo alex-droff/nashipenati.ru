@@ -15,6 +15,7 @@
 
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/style-2021.css">
 	<link rel="stylesheet" type="text/css" href="/css/skeleton.css">
 
 	<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox-1.3.4.css">
@@ -89,8 +90,10 @@
 		}
 
 		.request_form h2{
-			text-align: center;
-			margin-bottom: 1rem;
+			text-align: left;
+			max-width: 550px;
+			margin: 0 auto 1rem;
+			font-family: 'Phenomena';
 		}
 
 		.formrequest{
@@ -120,6 +123,26 @@
 
 		.formrequest>div label{
 			min-width: 100px;
+		}
+
+		.formrequest button#send {
+			padding: 0 30px;
+			height: 40px;
+			display: flex;
+			font-family: 'Phenomena';
+			letter-spacing: .02em;
+			font-size: 1.7rem;
+			border-radius: 15px;
+			background-color: #b48f97;
+			line-height:1;
+			align-items:center;
+			flex-wrap:wrap;
+			color:white;
+			transition:all .3s ease;
+		}
+
+		.formrequest button#send:hover{
+			transform:scale(1.05);
 		}
 
 	</style>
@@ -175,7 +198,7 @@
 				<label>&nbsp;</label>
 				<div>
 					<p>* - Поля обязательны для заполнения</p>
-					<p><button id="send" class="button medium red">Отправить заявку</button></p>
+					<p><button id="send">отправить</button></p>
 				</div>
 			</div>
 			

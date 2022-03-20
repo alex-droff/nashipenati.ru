@@ -50,7 +50,7 @@
 
 .top_menu {
     display: grid;
-    grid-template-columns: 240px auto;
+    grid-template-columns: 250px auto;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -64,9 +64,9 @@
     display: block;
     width: 100%;
     height: 100px;
-    background-image: url("../images/i-2021/logo-new.svg");
+    background-image: url("../images/i-2021/logo-mshso.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 210px auto;
     background-position: left top;
 }
 
@@ -937,7 +937,7 @@ h3.stuff-group {
 .container.filter-portfolio {
     width: 1200px;
     max-width: 1200px;
-    padding-left: 240px;
+    padding-left: 0;
     display: grid;
     grid-template-columns: auto 270px;
     gap: 0 5rem;
@@ -1059,6 +1059,19 @@ ul#portfolio {
 .gallery-item .view-first a {
     display: block;
     height: 280px;
+}
+
+#fancybox-close {
+    position: absolute;
+    top: -15px;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    background: transparent url(../images/i-2021/cross-h.svg) center center no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    z-index: 1103;
+    display: none;
 }
 
 

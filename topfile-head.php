@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title><? if($title) echo $title.' | ';?>НАШИ ПЕНАТЫ - Частная школа и детский сад в Москве</title>
+	<title><? if($title) echo $title.' | ';?>Международная школа смешанного обучения ex. НАШИ ПЕНАТЫ</title>
 	<meta charset=UTF-8 />
 	<meta name="robots" content="index, follow">
 	<meta name="description" content="Частная школа и детский сад в Москве, Беляево, Юго-Запад. Образование с использованием метода Марии Монтессори. Государственная лицензия и аккредитация">
@@ -25,7 +25,7 @@
 	<meta name="yandex-verification" content="8fbc062245cfbe16" />
 
 	<!-- Open Graph -->
-	<meta property="og:title" content="<? if($title) echo $title.' | ';?>НАШИ ПЕНАТЫ - Частная школа и детский сад в Москве" />
+	<meta property="og:title" content="<? if($title) echo $title.' | ';?>Международная школа смешанного обучения ex. НАШИ ПЕНАТЫ" />
 	<meta property="og:description" content="Частная школа и детский сад в Москве, Беляево, Юго-Запад. Образование с использованием метода Марии Монтессори." />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://nashipenati.ru/" />
