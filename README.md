@@ -1,5 +1,5 @@
 # nashipenati.ru
 
-## Files for redesign of site nashipenati.ru
+## Files for site 'nashipenati.ru' redesign
 ## Design: Victor Fedoseev
 ## Coding: Alex Droff
