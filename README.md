@@ -2,4 +2,4 @@
 
 ## Files for site 'nashipenati.ru' redesign
 ## Design: Victor Fedoseev
-## Coding: Alex Droff http://catcoder.ru
+## Coding: Alex Droff [http://catcoder.ru]
