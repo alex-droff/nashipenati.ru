@@ -23,6 +23,15 @@ images/bg
 interfaces/
 lib/
 source/
+css/
+
+# Но отслеживать файлы:
+!css/style-2021.css
+!css/style.css
+!css/portfolio.css
+!css/jquery.fancybox-1.3.4.css
+!css/skeleton.css
+
 
 # Игнорировать файлы в корне сайта
 user.php
