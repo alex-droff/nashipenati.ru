@@ -64,12 +64,12 @@
 					<nav class="clearfix" id="footer-nav">
 						<ul class="footer-menu">
 							<!--<li><a  target="_blank" title="Twitter" href="https://twitter.com/SchoolPenates/"><i class="fa fa-twitter-square fa-2x"></i></a></li>-->
-							<li><a target="_blank" title="Facebook"
+							<!--<li><a target="_blank" title="Facebook"
 									href="https://www.facebook.com/nashipenati?fref=ts"><i
 										class="fa fa-facebook-square fa-2x"></i></a></li>
 							<li><a target="_blank" title="Instagram"
 									href="https://www.instagram.com/citrus_montessori/?igshid=jdfzx6i9i5na"><i
-										class="fa fa-instagram fa-2x"></i></a></li>
+										class="fa fa-instagram fa-2x"></i></a></li>-->
 							<li><a target="_blank" title="VKontakte" href="https://vk.com/nashipenati"><i
 										class="fa fa-vk fa-2x"></i></a></li>
 
@@ -77,7 +77,7 @@
 					</nav>
 				</div>
 				<div class="footer-copyright-container right-text">
-					&copy; 2021 Наши Пенаты - все права защищены. При использовании материалов ссылка на сайт
+					&copy; 2022 ЧОУ ОО "МШСО" - все права защищены. При использовании материалов ссылка на сайт
 					обязательна.
 				</div>
 			</div>
