@@ -8,8 +8,6 @@ node_modules/
 dist/
 ckfinder/
 config/
-connect.php
-.htaccess
 backend/
 facebook/
 fancybox/
@@ -54,6 +52,7 @@ cddb6876d858.html
 about.php
 404.php
 connect.php
+.htaccess
 
 
 # Compiled Java class files
