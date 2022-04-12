@@ -1179,6 +1179,11 @@ ul.footer-contact-info li {
     display: none;
 }
 
+ul.footer-contact-info li a,
+ul.footer-contact-info li a:hover {
+    color: #f3efe8;
+}
+
 
 /* -------------MOBILE----------- */
 
