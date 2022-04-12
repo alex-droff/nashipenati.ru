@@ -32,6 +32,9 @@ css/
 !css/jquery.fancybox-1.3.4.css
 !css/skeleton.css
 
+!images/i-2021
+!images/sliders
+
 
 # Игнорировать файлы в корне сайта
 user.php
