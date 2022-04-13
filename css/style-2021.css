@@ -123,6 +123,10 @@
     z-index: 100;
 }
 
+.top_nav>li.nd {
+    display: none;
+}
+
 .top_nav>li a {
     font-family: 'Phenomena';
     text-transform: uppercase;
@@ -1256,6 +1260,9 @@ ul.footer-contact-info li a:hover {
         background-repeat: no-repeat;
         background-size: auto 40px;
         background-position: center center;
+    }
+    .top_nav>li.nd {
+        display: block;
     }
     .head_request {
         display: block;
