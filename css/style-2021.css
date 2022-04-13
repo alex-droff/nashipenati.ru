@@ -40,10 +40,6 @@
     z-index: 2;
 }
 
-.pre_header>*:not(.site_logo) {
-    padding-bottom: 7px;
-}
-
 #finevision_banner {
     display: none;
 }
@@ -70,6 +66,12 @@
     background-position: left top;
 }
 
+.lk_butt {
+    display: flex;
+    height: 40px;
+    align-content: center;
+}
+
 .secondlabellogo {
     display: block;
     width: 148px;
@@ -79,6 +81,23 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right top;
+}
+
+.head_request {
+    display: block;
+    width: 170px;
+    height: 100%;
+    margin-right: 1rem;
+    user-select: none;
+    background-image: url("../images/i-2021/request.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+    transition: all .3s linear;
+}
+
+.head_request:hover {
+    transform: scale(1.1);
 }
 
 .page_title {
@@ -95,7 +114,7 @@
 .top_nav {
     display: flex;
     justify-content: space-between;
-    padding: 3.6rem 0 4rem;
+    padding: 3.8rem 0 4rem;
     margin-bottom: 0;
 }
 
