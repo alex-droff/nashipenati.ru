@@ -145,6 +145,19 @@
 			transform:scale(1.05);
 		}
 
+		@media all and (max-width:768px){
+			.request_form {
+				padding: 3rem 1rem 0;
+				width: 90% !important;
+				margin: 0 auto;
+			}
+
+			.formrequest {
+				max-width: 100%;
+				margin: 0 auto;
+			}
+		}
+
 	</style>
 	<div class="container clearfix request_form">
 		<h2>Заявка на запись в школу</h2></br>
