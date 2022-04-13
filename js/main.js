@@ -101,17 +101,14 @@ $(document).ready(function() {
         nextEffect: 'fade',
     });
 
-    $("a.iframe").fancybox(
-
-        {
-            'titleShow': true,
-            'autoDimensions': true,
-            'width': 800,
-            'height': 450,
-            'autoScale': true,
-            'type': 'iframe'
-
-        });
+    $("a.iframe").fancybox({
+        'titleShow': true,
+        'autoDimensions': true,
+        'width': 800,
+        'height': 450,
+        'autoScale': true,
+        'type': 'iframe'
+    });
 
 });
 

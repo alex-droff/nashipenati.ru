@@ -4,7 +4,7 @@
 	<div id="finevision_banner" onclick="finevision.activate_navbar()" style="cursor: pointer; z-index: 9999; background: rgb(255, 255, 255); margin-left:auto;margin-right:1.2rem;"><img style="height:45px;width:auto;" src="https://finevision.ru/static/banner1.jpg" title="Версия для слабовидящих"><script src="https://finevision.ru/static/js/finevision_banner.js"></script></div>
 	<!-- end vision -->
 	<div class="lk_butt">
-    <a class="head_request nm" href="formrequest.php" class="iframe"></a>
+    <a class="head_request nm iframe" href="formrequest.php"></a>
 		<a class="secondlabellogo" target="_blank" href="https://new.iblschool.ru/"></a>
 	</div>
 </div>
