@@ -36,7 +36,7 @@
 
 
 // Адрес получателя заявки
-$sendto   = "n.ilinsky@iblschool.ru"; 
+$sendto   = "kotoffsfamily@gmail.com,n.ilinsky@iblschool.ru,a.belova@nashipenati.ru,a.sokolova@nashipenati.ru"; 
 // Адрес получателя заявки
 
 $subject  = "Письмо-заявка с сайта nashipenati.ru, ".$sub.". ".$usercity;

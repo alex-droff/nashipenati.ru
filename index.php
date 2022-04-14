@@ -149,7 +149,7 @@ require_once "topfile-head.php"; ?>
 					<div class="switcher-wrapper">
 					<div class="switcher-grid">
 						<? while ($switch = $result2->fetch_object()) { ?>
-							<div class="tab-switch tab-switch-<?= $tab_counter ?><? if ($tab_counter == 1) echo ' active' ?>">
+							<div class="tab-switch tab-switch-<? if ($tab_counter < 10) echo '0'?><?= $tab_counter ?><? if ($tab_counter == 1) echo ' active' ?>">
 								<div><?= $switch->service_pr; ?></div>
 								<img src="/images/i-2021/border_hmd_wht.png">
 							</div>
@@ -167,7 +167,7 @@ require_once "topfile-head.php"; ?>
 					<? $com_counter = 1;
 					while ($dep = $result1->fetch_object()) {
 						$qq = 0; ?>
-						<div class="sttab sttab-<?= $com_counter ?><? if ($com_counter == 1) echo ' active' ?>">
+						<div class="sttab sttab-<? if ($com_counter < 10) echo '0'?><?= $com_counter ?><? if ($com_counter == 1) echo ' active' ?>">
 							<h2 class="titlestuff">
 								<?= $dep->service_pr; ?>
 							</h2>

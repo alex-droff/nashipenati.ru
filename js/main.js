@@ -151,9 +151,14 @@ if ($('body').hasClass("home")) {
         //var commandTop = $('.container-command').offset().top - 60;
         tabs_count = $('.sttab').length;
         for (var i = 1; i <= tabs_count; i++) {
-            $('.tab-switch-' + i).click(function() {
+            if (i < 10) {
+                ind = '0' + i
+            } else {
+                ind = i
+            }
+            $('.tab-switch-' + ind).click(function() {
                 if (!$(this).hasClass("active")) {
-                    var num = $(this).attr('class').slice(-1);
+                    var num = $(this).attr('class').slice(-2);
                     $('.tab-switch,.sttab').removeClass("active");
                     $(this).addClass("active");
                     $('.sttab-' + num).addClass("active");
