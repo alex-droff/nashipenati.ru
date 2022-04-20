@@ -29,6 +29,6 @@
 				<? } ?> 
 			</li>
 		<? } ?>
-		<li class="nd"><a class="head_request" href="formrequest.php" class="iframe"></a></li>
+		<li class="nd"><a class="head_request" href="/formrequest.php" class="iframe"></a></li>
 	</ul>
 </nav>

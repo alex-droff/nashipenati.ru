@@ -191,8 +191,7 @@ require_once "topfile-head.php";
 
 									</div><? /*?><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnashipenati%2F&tabs=timeline&width=270&height=350&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="270" height="350" style="border:none;overflow:hidden"></iframe>
 							</div>
-							<div><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcitrusmontessorischool%2F&tabs=timeline&width=270&height=350&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="270" height="350" style="border:none;overflow:hidden"></iframe><? */?>
-							</div>
+							<div><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcitrusmontessorischool%2F&tabs=timeline&width=270&height=350&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="270" height="350" style="border:none;overflow:hidden"></iframe><? */?></div>
 
 						</div>
 					</div>
@@ -260,7 +259,7 @@ require_once "topfile-head.php";
 
 <!-- JS begin -->
 <script src="/js/jquery-1.11.2.min.js"></script>
-<script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.js"></script>
 <script src="/js/jquery.easing.1.3.js"></script>
 <script src="/js/superfish.js"></script>
 <script src="/js/jquery-ui.min.js"></script>

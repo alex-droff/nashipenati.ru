@@ -16,6 +16,15 @@
 
 /* ===============NEW DESIGN=================== */
 
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #B48F97;
+}
+
 .blog-item-text-container>p {
     color: rgb(5, 6, 6);
     line-height: 1.5;
@@ -81,6 +90,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right top;
+    transition: all .3s linear;
 }
 
 .head_request {
@@ -96,7 +106,8 @@
     transition: all .3s linear;
 }
 
-.head_request:hover {
+.head_request:hover,
+.secondlabellogo:hover {
     transform: scale(1.1);
 }
 
@@ -137,10 +148,11 @@
     position: relative;
     z-index: 100;
     margin-bottom: -3px;
+    text-decoration: none;
 }
 
 .top_nav>li>a.active::after,
-.top_nav>li:hover>a::after {
+.top_nav li:hover>a::after {
     content: "";
     position: absolute;
     top: calc(100% + 5px);
@@ -196,10 +208,10 @@
     display: grid;
     grid-template-columns: 190px auto;
     gap: 0 80px;
-    margin-left: calc(50% - 630px);
-    /* max-width: 1200px;
+    /* margin-left: calc(50% - 630px); */
+    max-width: 1200px;
     margin-left: auto;
-    margin-right: auto; */
+    margin-right: auto;
     min-height: 568px;
     position: relative;
     background: url("../images/i-2021/curve.svg") bottom left repeat-x;
@@ -270,6 +282,7 @@
     cursor: pointer;
     height: 100%;
     width: 100%;
+    text-decoration: none;
 }
 
 .directions .hs .preview {
@@ -486,6 +499,7 @@
 
 .title-block-text a {
     color: inherit;
+    text-decoration: none;
 }
 
 .carousel-navi {
@@ -608,6 +622,7 @@
     color: #070707;
     font-size: 2.4rem;
     line-height: 1;
+    text-decoration: none;
 }
 
 .hover-item img {
@@ -741,6 +756,7 @@ h3.stuff-group {
     color: #070707;
     position: relative;
     z-index: 3;
+    text-decoration: none;
 }
 
 .stuff-item>a .stuff-thumbnail {
@@ -1041,16 +1057,18 @@ h3.stuff-group {
 
 .blog-categories li a,
 .blog-categories li a:hover {
-    color: #201600;
+    /* color: #201600; */
     font-family: 'Phenomena';
     line-height: 1.2;
     font-size: 1.2rem;
     display: block;
+    text-decoration: none;
 }
 
-.blog-categories li a:hover {
+
+/* .blog-categories li a:hover {
     color: #678187;
-}
+} */
 
 .staff_grid {
     display: grid;

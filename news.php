@@ -285,7 +285,7 @@ if (isset($_REQUEST['idp'])&&((int)$_REQUEST['idp']>=1)) { ?>
 	<!-- JS begin -->
 
 	<script src="/js/jquery-1.11.2.min.js"></script>
-	<script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.js"></script>
 	<script src="/js/jquery.easing.1.3.js"></script>
 	<script src="/js/superfish.js"></script>
 	<script src="/js/jquery-ui.min.js"></script>

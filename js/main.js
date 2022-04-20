@@ -77,29 +77,39 @@ $(document).ready(function() {
             window.location = $(this).find('option:selected').val();
         });
 
-        var idp = $('body').attr('class').slice(5);
-        $('.idp-' + idp).addClass("active");
+		if ( $('body').hasClass()) {
+			var idp = $('body').attr('class').slice(5);
+			$('.idp-' + idp).addClass("active");
+		}
     }
 });
 
 //FANCYBOX-------------------------------------------------------
 $(document).ready(function() {
 
-    $(".lightbox").live("mousedown", function() {
-        $(this).fancybox({
-            'titleShow': false,
-            'overlayShow': true,
-            'transitionIn': 'elastic',
-            'transitionOut': 'elastic'
-        });
-    });
+    if($(".lightbox").length){
+		$(".lightbox").live("mousedown", function() {
+			$(this).fancybox({
+				'titleShow': false,
+				'overlayShow': true,
+				'transitionIn': 'elastic',
+				'transitionOut': 'elastic'
+			});
+		});
+	}
 
-    $(".fancybox").fancybox({
-        openEffect: 'none',
-        closeEffect: 'none',
-        prevEffect: 'fade',
-        nextEffect: 'fade',
-    });
+	if($(".fancybox").length){
+		$(".fancybox").fancybox({
+			openEffect: 'none',
+			closeEffect: 'none',
+			prevEffect: 'fade',
+			nextEffect: 'fade',
+		});
+	}
+	
+	// $("a.iframe").click(function(e){
+		// e.preventDefault();
+	// });
 
     $("a.iframe").fancybox({
         'titleShow': true,

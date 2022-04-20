@@ -71,6 +71,7 @@ require_once "topfile-head.php"; ?>
 				</div>
 			</div><!-- End slider -->
 
+			<? /* ?>
 			<!-- mobile slider -->
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
@@ -114,6 +115,7 @@ require_once "topfile-head.php"; ?>
 				</a>
 			</div>
 			<!-- mobile slider end -->
+			<? */ ?>
 
 		</div><!-- /SLIDER -->
 
