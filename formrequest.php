@@ -96,6 +96,15 @@
 			font-family: 'Phenomena';
 		}
 
+		.request_form h4{
+			text-align: left;
+			max-width: 550px;
+			margin: 0 auto 1rem;
+			font-family: 'Phenomena';
+			font-size: 18px;
+    		line-height: 1.2;
+		}
+
 		.formrequest{
 			max-width: 550px;
 			margin: 0 auto;
@@ -160,8 +169,8 @@
 
 	</style>
 	<div class="container clearfix request_form">
-		<h2>Заявка на запись в школу</h2></br>
-		<h4>Внимание! Это заявка на очное обучение. Если вы собираетесь поступать на заочное, перейдите по этой <a href="http://distnashipenati.ru/page.php?idp=198">ссылке</a></h4>
+		<h2>Заявка на запись в школу</h2>
+		<h4>Внимание! Это заявка на очное обучение!<br>Если вы собираетесь поступать на заочное, перейдите по этой <a href="https://ibls.one/" target="_blank">ссылке</a></h4></br>
 
 		<form id="contact" name="contact" class="formrequest" action="#" method="post">
 			<input type="hidden" id="prodsub" name="prodsub" value="Заявка на запись в школу">
@@ -192,7 +201,7 @@
 			</div>
 			<p class="errephone" style="display:none;">Неправильно заполнено поле Телефон</p>
 
-			<div>
+			<!--<div>
 				<label for="eduform"><strong>Форма обучения</strong>*</label>
 				<select name="eduform" id="eduform">
 					<option disabled selected>Выберите форму обучения</option>
@@ -200,9 +209,9 @@
 					<option value="Заочная">Заочная</option>
 				</select>
 			</div>
-			<p class="erreduform" style="display:none;">Выберите форму обучения</p>
+			<p class="erreduform" style="display:none;">Выберите форму обучения</p>-->
 
-			<!-- <div>
+			 <div>
 				<label for="direction"><strong>Направление</strong>*</label>
 				<select name="direction" id="direction">
 					<option disabled selected>Выберите направление</option>
@@ -210,7 +219,7 @@
 					<option value="Младшая школа">Младшая школа</option>
 					<option value="Средняя/старшая школа">Средняя/старшая школа</option>
 				</select>
-			</div> -->
+			</div> 
 			
 			<div>
 				<label for="msg"><strong>Сообщение</strong></label>
