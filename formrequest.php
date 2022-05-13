@@ -161,6 +161,7 @@
 	</style>
 	<div class="container clearfix request_form">
 		<h2>Заявка на запись в школу</h2></br>
+		<h4>Внимание! Это заявка на очное обучение. Если вы собираетесь поступать на заочное, перейдите по этой <a href="http://distnashipenati.ru/page.php?idp=198">ссылке</a></h4>
 
 		<form id="contact" name="contact" class="formrequest" action="#" method="post">
 			<input type="hidden" id="prodsub" name="prodsub" value="Заявка на запись в школу">
@@ -201,7 +202,7 @@
 			</div>
 			<p class="erreduform" style="display:none;">Выберите форму обучения</p>
 
-			<div>
+			<!-- <div>
 				<label for="direction"><strong>Направление</strong>*</label>
 				<select name="direction" id="direction">
 					<option disabled selected>Выберите направление</option>
@@ -209,7 +210,7 @@
 					<option value="Младшая школа">Младшая школа</option>
 					<option value="Средняя/старшая школа">Средняя/старшая школа</option>
 				</select>
-			</div>
+			</div> -->
 			
 			<div>
 				<label for="msg"><strong>Сообщение</strong></label>
