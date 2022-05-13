@@ -30,6 +30,7 @@
 	$userphone = $_POST['phone'];
 	$content  = nl2br($_POST['msg']);
 	$direction = $_POST['direction'];
+	$eduform = $_POST['eduform'];
 	$sub = $_POST['prodsub'];
 	$idsub = $_POST['prodid'];
 	$subid = $_POST['subid'];
@@ -52,6 +53,7 @@ $msg .= "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>Письм�
 $msg .= "<p><strong>Имя:</strong> ".$username."</p>\r\n";
 if ($_POST['prodid']==18) {$msg .= "<p><strong>Компания:</strong> ".$_POST['comp']."</p>\r\n"; } 
 if ($_POST['prodid']==0) {$msg .= "<p><strong>Сообщение:</strong> ".$_POST['city']."</p>\r\n"; } else { $msg .= "<p><strong>Сообщение:</strong> ".$usercity."</p>\r\n"; }
+if($eduform){$msg .= "<p><strong>Форма обучения:</strong> ".$eduform."</p>\r\n";}
 if($direction){$msg .= "<p><strong>Направление:</strong> ".$direction."</p>\r\n";}
 $msg .= "<p><strong>Email:</strong> ".$usermail."</p>\r\n";
 $msg .= "<p><strong>Телефон:</strong> ".$userphone."</p>\r\n";

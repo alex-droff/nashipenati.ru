@@ -192,6 +192,16 @@
 			<p class="errephone" style="display:none;">Неправильно заполнено поле Телефон</p>
 
 			<div>
+				<label for="eduform"><strong>Направление</strong>*</label>
+				<select name="eduform" id="eduform">
+					<option disabled selected>Выберите форму обучения</option>
+					<option value="Очная">Очная</option>
+					<option value="Заочная">Заочная</option>
+				</select>
+			</div>
+			<p class="erreduform" style="display:none;">Выберите форму обучения</p>
+
+			<div>
 				<label for="direction"><strong>Направление</strong>*</label>
 				<select name="direction" id="direction">
 					<option disabled selected>Выберите направление</option>
