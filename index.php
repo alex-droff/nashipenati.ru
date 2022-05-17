@@ -43,7 +43,7 @@ require_once "topfile-head.php"; ?>
 				</div>
 				<div class="hs">
 					<div class="preview">
-						<a href="https://nashipenati.ru/highschool/">cредняя и&nbsp;старшая школа</a>
+						<a href="https://nashipenati.ru/highschool/">cредняя школа</a>
 					</div>
 					<div class="ani">
 						<div class="info">
@@ -62,10 +62,7 @@ require_once "topfile-head.php"; ?>
 				<div class="flex-container">
 					<div class="flexslider loading">
 						<ul class="slides">
-							<li style="background-image:url(images/sliders/slider-1/slide-b1.png);"></li>
-							<li style="background-image:url(images/sliders/slider-1/slide-b2.png);"></li>
-							<li style="background-image:url(images/sliders/slider-1/slide-b3.png);"></li>
-							<li style="background-image:url(images/sliders/slider-1/slide-b4.png);"></li>
+							<li style="background-image:url(images/sliders/slider-1/slide-0522.png);"></li>
 						</ul>
 					</div>
 				</div>
@@ -125,11 +122,10 @@ require_once "topfile-head.php"; ?>
 				<a href="http://distnashipenati.ru/" target="_blank">
 					<div class="buy-text-container">
 						<div class="buy-text">
-							<h2>заочное отделение школы</h2>
+							<h2>заочное<br>отделение</h2>
 						</div>
 					</div>
 					<div class="arr-l"></div>
-					<div class="buy-text-container">перейти</div>
 				</a>
 			</div>
 		</div>
@@ -142,23 +138,7 @@ require_once "topfile-head.php"; ?>
 				</div>
 			</div>
 			<? if (!isset($_REQUEST['table'])) { ?>
-				<?
-					$sql_t = "SELECT id_service	, service_pr FROM `service_pr` WHERE parent_id=172;";
-					//echo $sql;
-					$result2 = $mysqli->query($sql_t);
-
-					$tab_counter = 1; ?>
-					<div class="switcher-wrapper">
-					<div class="switcher-grid">
-						<? while ($switch = $result2->fetch_object()) { ?>
-							<div class="tab-switch tab-switch-<? if ($tab_counter < 10) echo '0'?><?= $tab_counter ?><? if ($tab_counter == 1) echo ' active' ?>">
-								<div><?= $switch->service_pr; ?></div>
-								<img src="/images/i-2021/border_hmd_wht.png">
-							</div>
-						<? $tab_counter++;
-						} ?>
-					</div>
-					</div>
+				
 				<?
 				$sql = "SELECT id_service	, service_pr FROM `service_pr` WHERE parent_id=172;";
 				//echo $sql;
@@ -210,6 +190,24 @@ require_once "topfile-head.php"; ?>
 						</div>
 					<? $com_counter++;
 					} ?>
+
+<?
+					$sql_t = "SELECT id_service	, service_pr FROM `service_pr` WHERE parent_id=172;";
+					//echo $sql;
+					$result2 = $mysqli->query($sql_t);
+
+					$tab_counter = 1; ?>
+					<div class="switcher-wrapper">
+					<div class="switcher-grid">
+						<? while ($switch = $result2->fetch_object()) { ?>
+							<div class="tab-switch tab-switch-<? if ($tab_counter < 10) echo '0'?><?= $tab_counter ?><? if ($tab_counter == 1) echo ' active' ?>">
+								<div><?= $switch->service_pr; ?></div>
+								<img src="/images/i-2021/border_hmd_wht.png">
+							</div>
+						<? $tab_counter++;
+						} ?>
+					</div>
+					</div>
 					
 
 				</div>
@@ -305,7 +303,7 @@ require_once "topfile-head.php"; ?>
 
 		
 
-		<div class="container-column-full">
+<? /*?>		<div class="container-column-full">
 			<!-- SLIDER -->
 			<div class="slider-home">
 				<div class="flex-container-home">
@@ -319,7 +317,7 @@ require_once "topfile-head.php"; ?>
 				</div>
 			</div><!-- End slider -->
 			
-		</div>
+		</div> <? */ ?>
 
 		<!-- LATEST NEWS -->
 		<div class="container clearfix news-block">

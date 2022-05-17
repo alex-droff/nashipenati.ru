@@ -77,39 +77,39 @@ $(document).ready(function() {
             window.location = $(this).find('option:selected').val();
         });
 
-		if ( $('body').hasClass()) {
-			var idp = $('body').attr('class').slice(5);
-			$('.idp-' + idp).addClass("active");
-		}
+        if ($('body').hasClass()) {
+            var idp = $('body').attr('class').slice(5);
+            $('.idp-' + idp).addClass("active");
+        }
     }
 });
 
 //FANCYBOX-------------------------------------------------------
 $(document).ready(function() {
 
-    if($(".lightbox").length){
-		$(".lightbox").live("mousedown", function() {
-			$(this).fancybox({
-				'titleShow': false,
-				'overlayShow': true,
-				'transitionIn': 'elastic',
-				'transitionOut': 'elastic'
-			});
-		});
-	}
+    if ($(".lightbox").length) {
+        $(".lightbox").live("mousedown", function() {
+            $(this).fancybox({
+                'titleShow': false,
+                'overlayShow': true,
+                'transitionIn': 'elastic',
+                'transitionOut': 'elastic'
+            });
+        });
+    }
 
-	if($(".fancybox").length){
-		$(".fancybox").fancybox({
-			openEffect: 'none',
-			closeEffect: 'none',
-			prevEffect: 'fade',
-			nextEffect: 'fade',
-		});
-	}
-	
-	// $("a.iframe").click(function(e){
-		// e.preventDefault();
-	// });
+    if ($(".fancybox").length) {
+        $(".fancybox").fancybox({
+            openEffect: 'none',
+            closeEffect: 'none',
+            prevEffect: 'fade',
+            nextEffect: 'fade',
+        });
+    }
+
+    // $("a.iframe").click(function(e){
+    // e.preventDefault();
+    // });
 
     $("a.iframe").fancybox({
         'titleShow': true,
@@ -158,7 +158,7 @@ if ($('body').hasClass("home")) {
 
     $(document).ready(function() {
 
-        //var commandTop = $('.container-command').offset().top - 60;
+        var commandTop = $('.container-command').offset().top - 100;
         tabs_count = $('.sttab').length;
         for (var i = 1; i <= tabs_count; i++) {
             if (i < 10) {
@@ -172,7 +172,7 @@ if ($('body').hasClass("home")) {
                     $('.tab-switch,.sttab').removeClass("active");
                     $(this).addClass("active");
                     $('.sttab-' + num).addClass("active");
-                    //$('body,html').animate({ scrollTop: commandTop }, 500);
+                    $('body,html').animate({ scrollTop: commandTop }, 500);
                 }
             })
         }

@@ -1252,12 +1252,15 @@ ul.sf-menu li li li.sfHover ul {
 }
 
 .zao_edu {
-    /* background-color: #B0C3B3; */
-    background-color: #b48f97;
+    /* background-color: #B0C3B3;
+    background-color: #b48f97; */
+    background-color: #495063;
 }
 
 .zao_edu .container {
     width: 1140px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .zao_edu .container a {
@@ -1271,21 +1274,21 @@ ul.sf-menu li li li.sfHover ul {
 }
 
 .arr-l {
-    background-image: url("../images/i-2021/arr_wht_rt.svg");
+    background-image: url("../images/i-2021/arr_wt_big.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
 }
 
 .zao_edu .arr-l {
-    width: 42px;
-    height: 42px;
-    background-size: 42px;
+    width: 750px;
+    height: 50px;
+    background-size: contain;
     margin-right: 40px;
 }
 
 .zao_edu a:hover {
-    transform: translateX(20%);
+    transform: translateX(10%);
 }
 
 .buy-img-container {
@@ -1305,10 +1308,12 @@ ul.sf-menu li li li.sfHover ul {
 .buy-text h2 {
     color: white;
     line-height: 1;
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     margin: 0;
     font-family: 'Phenomena';
-    text-transform: uppercase;
+    text-transform: lowercase;
+    font-weight: 300;
+    letter-spacing: .07em;
 }
 
 .button-buy-container a {
