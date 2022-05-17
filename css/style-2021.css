@@ -500,8 +500,8 @@ a:hover {
 
 .container.news-block {
     width: 1160px;
-    padding: 30rem 0 9rem;
-    background: url("../images/i-2021/news_header.png") center top 3rem no-repeat;
+    padding: 32rem 0 9rem;
+    background: url("../images/i-2021/news_header.png") center top 6rem no-repeat;
     background-size: auto 430px;
 }
 
@@ -730,7 +730,7 @@ h3.stuff-group {
 .container-column.green {
     background: #b0c3b3;
     text-align: center;
-    padding-bottom: 6rem;
+    padding-bottom: 4.5rem;
     margin-bottom: 0;
 }
 
@@ -1170,12 +1170,12 @@ ul#portfolio {
 /* ----------FOOTER-------------- */
 
 .footer {
-    background: #232323;
+    background: #333333;
 }
 
 .footer-copyright-bg {
     color: white;
-    background-color: #678187;
+    background-color: #333333;
 }
 
 .footer .container,
@@ -1206,6 +1206,7 @@ ul#portfolio {
 .footer-grid li a,
 ul.footer-contact-info li {
     color: white;
+    text-decoration: none;
 }
 
 ul.footer-contact-info li a {
@@ -1229,6 +1230,7 @@ ul.footer-contact-info li {
 .footer-grid h3 a {
     color: white;
     text-transform: uppercase;
+    text-decoration: none;
     padding-bottom: 1em;
     font-size: 1em;
     font-weight: 700;

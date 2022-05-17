@@ -3709,8 +3709,7 @@ footer .r-m-plus::after {
 }
 
 .footer {
-    background: rgb(65, 65, 70);
-    padding: 5em 0px;
+    padding: 5em 0px 1rem;
 }
 
 .footer .container {
@@ -3769,7 +3768,7 @@ ul.list1 a {
 }
 
 ul.list1 a:hover {
-    color: rgb(222, 217, 200);
+    color: inherit;
     text-decoration: underline;
 }
 
