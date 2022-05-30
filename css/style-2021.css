@@ -1622,6 +1622,7 @@ ul.footer-contact-info li a:hover {
     .container.news-block {
         width: 100%;
         padding: 1rem 20px 3rem;
+        background: none;
     }
     .jcarousel ul {
         margin: 0px;
