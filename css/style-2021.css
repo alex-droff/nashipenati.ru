@@ -688,6 +688,91 @@ a:hover {
     }
 }
 
+.zao_edu {
+    /* background-color: #495063; */
+    background-color: #476a4d;
+}
+
+.zao_edu .container {
+    width: 1140px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.zao_edu .container a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    transition: all ease .5s;
+    width: 100%;
+    min-height: 90px;
+    text-decoration: none;
+}
+
+.arr-l {
+    background-image: url("../images/i-2021/arr_wt_big.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.zao_edu .arr-l {
+    width: 750px;
+    height: 50px;
+    background-size: contain;
+    margin-right: 40px;
+}
+
+.zao_edu a:hover {
+    transform: translateX(10%);
+}
+
+.buy-img-container {
+    float: left;
+    background-color: rgb(255, 234, 0);
+}
+
+.buy-img-container span {
+    padding: 15px 0px;
+    width: 90px;
+    height: 60px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    display: block;
+}
+
+.buy-text h2 {
+    color: white;
+    line-height: 1;
+    font-size: 2.8rem;
+    margin: 0;
+    font-family: 'Phenomena';
+    text-transform: lowercase;
+    font-weight: 300;
+    letter-spacing: .07em;
+}
+
+.button-buy-container a {
+    padding: 30px;
+    color: rgb(65, 65, 70);
+    line-height: 29px;
+    font-family: "Fira Sans", Helvetica, sans-serif;
+    font-size: 20px;
+    display: block;
+    background-color: rgb(255, 234, 0);
+}
+
+.button-buy-container a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(47, 52, 58);
+}
+
+.buy-text-container {
+    padding: 0 42px 0 0;
+    color: white;
+    font-size: 1.2rem;
+}
+
 
 /* CoMMAND */
 
@@ -732,7 +817,8 @@ h3.stuff-group {
 }
 
 .container-column.green {
-    background: #b3cdad;
+    /* background: #b3cdad; */
+    background: #5f8c9f;
     text-align: center;
     padding-bottom: 4.5rem;
     margin-bottom: 0;
@@ -848,7 +934,8 @@ h3.stuff-group {
     height: calc(100% + 20px);
     top: -10px;
     left: -10px;
-    background-color: #eec6d4;
+    /* background-color: #eec6d4; */
+    background-color: #d34c50;
     z-index: 2;
     opacity: 0;
     transition: all .2s ease;
