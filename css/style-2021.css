@@ -505,8 +505,8 @@ a:hover {
 .container.news-block {
     width: 1160px;
     padding: 32rem 0 9rem;
-    background: url("../images/i-2021/news_header.png") center top 6rem no-repeat;
-    background-size: auto 430px;
+    background: url("../images/i-2021/news_collage.png") left 9rem top no-repeat;
+    background-size: contain;
 }
 
 .container-column-intro .title-block-text {
@@ -922,11 +922,9 @@ h3.stuff-group {
     transition: .3s color ease;
 }
 
-
-/* .stuff-item:hover .stuff-position,
-.stuff-item:hover .stuff-name {
+.stuff-item:hover .stuff-position {
     color: white;
-} */
+}
 
 .stuff-item .itembg {
     position: absolute;
