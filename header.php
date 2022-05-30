@@ -13,10 +13,11 @@
 <header id="header">
 	<div class="top_menu">
     <div class="lk_butt">
+      <a href="/" class="site_logo"></a>
       <a class="secondlabellogo" target="_blank" href="https://new.iblschool.ru/"></a>
     </div>
-    <a href="/" class="site_logo"></a>
-    <div class="hamburger"></div>
+    
+    <div class="hamburger"><div></div></div>
 		<? require 'menu.php'; ?>
 	</div>
 

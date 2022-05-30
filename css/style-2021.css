@@ -1382,14 +1382,14 @@ ul.footer-contact-info li a:hover {
     .slider-1 .flexslider {
         display: block;
     }
-    .top_menu {
+    /* .top_menu {
         display: grid;
         grid-template-columns: 22% 55% auto;
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
         align-items: center;
-    }
+    } 
     .top_menu .lk_butt {
         display: flex;
         align-items: center;
@@ -1406,6 +1406,52 @@ ul.footer-contact-info li a:hover {
         background-size: auto 30px;
         background-position: left center;
         position: static;
+    }*/
+    .top_menu .lk_butt {
+        display: block;
+        padding-left: 20px;
+    }
+    .top_menu .lk_butt .secondlabellogo {
+        display: block;
+        width: 100%;
+        height: 100%;
+        user-select: none;
+        background-image: url(../images/i-2021/ibls.svg);
+        background-repeat: no-repeat;
+        background-size: auto 22px;
+        background-position: left center;
+        position: static;
+    }
+    .top_menu {
+        display: grid;
+        grid-template-columns: 50% auto;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: top;
+        background: url("../images/i-2021/mobile_header.png");
+        background-repeat: no-repeat;
+        background-size: auto 90%;
+        background-position: top right;
+        min-height: 130px;
+    }
+    .hamburger {
+        display: block;
+        position: relative;
+    }
+    .hamburger>div {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 15px;
+        height: 30px;
+        width: 30px;
+        background-color: white;
+        border-radius: 50%;
+        background-image: url("../images/i-2021/hamburger.svg");
+        background-repeat: no-repeat;
+        background-size: auto 12px;
+        background-position: center center;
     }
     #header {
         margin-bottom: 0;
@@ -1414,11 +1460,12 @@ ul.footer-contact-info li a:hover {
     .site_logo {
         display: block;
         width: 100%;
-        height: 80px;
+        height: 60px;
         background-image: url("../images/i-2021/logo_mcsho.svg");
         background-repeat: no-repeat;
         background-size: auto 50px;
-        background-position: center center;
+        background-position: left top;
+        margin-top: 20px;
     }
     .top_nav>li.nd {
         display: block;
@@ -1429,7 +1476,7 @@ ul.footer-contact-info li a:hover {
         height: 50px;
         margin-left: -44px;
         user-select: none;
-        background-image: url("../images/i-2021/request.svg");
+        background-image: url("../images/i-2021/request_w.svg");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: left top;
@@ -1671,19 +1718,11 @@ ul.footer-contact-info li a:hover {
         height: 60vw;
     }
     /*  Mobile menu */
-    .hamburger {
-        display: block;
-        height: 100%;
-        background-image: url("../images/i-2021/hamburger.svg");
-        background-repeat: no-repeat;
-        background-size: auto 14px;
-        background-position: right 20px center;
-    }
     .mob_menu {
         display: block;
         position: fixed;
         z-index: 10000;
-        background-color: #b3cdad;
+        background-color: #476a4d;
         width: 100vw;
         height: 100vh;
         left: -100vw;
@@ -1700,7 +1739,7 @@ ul.footer-contact-info li a:hover {
         z-index: 10001;
         width: 20px;
         height: 20px;
-        background-image: url("../images/i-2021/cross.svg");
+        background-image: url("../images/i-2021/cross_w.svg");
         background-repeat: no-repeat;
         background-size: auto 20px;
         background-position: center center;
@@ -1723,6 +1762,7 @@ ul.footer-contact-info li a:hover {
     }
     .top_nav>li>a {
         margin-bottom: 30px;
+        color: white;
     }
     .top_nav ul li {
         padding: .1rem 2.5rem .5rem 0;
@@ -1730,6 +1770,7 @@ ul.footer-contact-info li a:hover {
     }
     .top_nav ul li a {
         line-height: 1.2;
+        color: white;
     }
     .top_nav ul li:last-of-type a {
         margin-bottom: 2rem;
@@ -1761,7 +1802,7 @@ ul.footer-contact-info li a:hover {
         left: -40px;
         width: 30px;
         height: 30px;
-        background: url(/images/i-2021/arr_bl_dn.svg) center center no-repeat;
+        background: url(/images/i-2021/arr_wt_dn.svg) center center no-repeat;
         background-size: 20px;
         transition: all linear .2s;
     }
