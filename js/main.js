@@ -384,7 +384,7 @@ setTimeout(function() {
                 var $this = $(this);
                 var maxHeight = -1;
                 $this.find('li').each(function() {
-                    maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+                    maxHeight = maxHeight > $(this).outerHeight() ? maxHeight : $(this).outerHeight();
                 });
                 $this.height(maxHeight);
             });
