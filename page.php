@@ -102,7 +102,7 @@ require_once "topfile-head.php";
 							<div class="blog-item m-bot-35 clearfix">
 								<!-- <div class="hover-item"><br><br></div> -->
 								<div class="blog-item-text-container">
-									<? if($page_title) echo '<h3>'.$page_title.'</h3>'; ?>
+									<? if($page_title) echo '<h1>'.$page_title.'</h1>'; ?>
 									<?  $str = str_replace("<p>", '<p class="p1">', $page_content);
 										$str = str_replace('\"', '"', $page_content);
 										echo $str;

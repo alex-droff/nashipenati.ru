@@ -47,11 +47,12 @@ require_once "topfile-head.php";
 				<? $sql = "SELECT id_service	, service_pr FROM `service_pr` WHERE parent_id=172;";
 					//echo $sql;
 					$result1 = $mysqli->query($sql);
+					$j=1;
 				while ($dep = $result1->fetch_object()) {
 						$qq = 0; 
 				?>
-
-				<h3 class="stuff-group"><?= $dep->service_pr; ?></h2>
+				<a name="<?='stuff-'.$j?>" id="<?='stuff-'.$j?>"></a>
+				<h3 class="stuff-group"><?= $dep->service_pr; ?></h3>
 
 				<?
 					$sql2 = "SELECT `stw_employee`.*  FROM  `stw_employee`  WHERE `stw_employee`.department_id=" . $dep->id_service . "  ORDER BY list_order  ;";
@@ -60,7 +61,7 @@ require_once "topfile-head.php";
 					$result2 = $mysqli->query($sql2);
 				?>
 
-				<div class="staff_grid">
+				<div class="stuff-grid">
 					<?
 					while ($item = $result2->fetch_object()) {
 						$q = 0; 
@@ -76,14 +77,14 @@ require_once "topfile-head.php";
 						} 
 					?>
 
-						<div class="staff-item">
+						<div class="stuff-item">
 								<? if (strlen($itemview) >= 1) { 
 									$staff_pic_url = "/ckfinder/userfiles/images/employee/".$itemview;
 								 } else {
 									$staff_pic_url = "/images/preview.png";
 								 } ?> 
-							<a href="teacher.php?idt=<?= $item->id; ?>" class="iframe staff_pic" style="background:url('<?=$staff_pic_url?>') center center no-repeat;background-size:cover"></a> 
-							<a href="teacher.php?idt=<?= $item->id; ?>" class="iframe staff-name"> 
+							<a href="teacher.php?idt=<?= $item->id; ?>" class="iframe stuff-pic" style="background:url('<?=$staff_pic_url?>') center center no-repeat;background-size:cover"></a> 
+							<a href="teacher.php?idt=<?= $item->id; ?>" class="iframe stuff-name"> 
 								<? if ($item->number != 0) { ?>
 								<span>№ <?= $item->number; ?></span>
 								<? } ?>
@@ -95,7 +96,7 @@ require_once "topfile-head.php";
 					<? } ?>
 				</div>
 
-			<? } ?>
+			<? $j++;} ?>
 
 
 			<? } else {  ?>

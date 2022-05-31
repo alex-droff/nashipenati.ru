@@ -2445,14 +2445,14 @@ ul.contact-list li {
 }
 
 .blog-categories li.active a {
-    color: rgb(238, 113, 27);
+    color: #b48484;
     font-weight: bold;
 }
 
 .blog-categories li {
     padding-bottom: 10px;
     margin-bottom: 10px;
-    border-bottom-color: rgb(238, 113, 27);
+    border-bottom-color: #b48484;
     border-bottom-width: 1px;
     border-bottom-style: dotted;
     min-height: 12px;

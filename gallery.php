@@ -25,7 +25,7 @@ if ($id>=1) {
 
 } else { // header("Location: /404.php");
 }
-$title ="Наши Пенаты - фотогалерея";
+$title ="Фотогалерея";
 require_once "topfile-head.php";
 ?>
 
@@ -94,11 +94,11 @@ require_once "topfile-head.php";
 		<h1 class="pagename">Фотогалерея</h1>	
 				<ul id="portfolio">
 					<!-- PORTFOLIO ITEM -->
-			<?  $sql2="SELECT * FROM `tbl_gallery`;";		
+			<?  $sql2="SELECT * FROM `tbl_gallery` ORDER BY id DESC;";		
 				$result2 = $mysqli->query($sql2);
 				$num_rows = $result2->num_rows;
 				while ($myrow2 =$result2->fetch_object()) { 
-					$sql1="SELECT * FROM `tbl_gallery_photo` WHERE `gallery_id` ='".$myrow2->id."' AND typephoto='gallery' ORDER BY `id` ;";
+					$sql1="SELECT * FROM `tbl_gallery_photo` WHERE `gallery_id` ='".$myrow2->id."' AND typephoto='gallery' ORDER BY id;";
 					//echo $sql1;
 					$result1 = $mysqli->query($sql1);
 					$num_rows = $result1->num_rows;
@@ -144,7 +144,7 @@ require_once "topfile-head.php";
 					<ul class="blog-categories">
 
 						<? 
-				$sql2="SELECT * FROM `tbl_gallery` ;";
+				$sql2="SELECT * FROM `tbl_gallery`  ORDER BY id DESC;";
 	
 			$result4 =$mysqli->query($sql2);
 			$o=0;
