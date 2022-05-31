@@ -29,7 +29,7 @@ $title ="Фотогалерея";
 require_once "topfile-head.php";
 ?>
 
-<body>
+<body class="gallery">
 <!-- Google Tag Manager -->
 <? require_once "counters-gtm.php"; ?>
 <!-- End Google Tag Manager -->
@@ -48,11 +48,11 @@ require_once "topfile-head.php";
 		<h1 class="pagename"><?=$myrow2->name; ?></h1>
 		<style>
 			.fancybox {
-				opacity: 0.7;
+				opacity: 1;
 			}
 
 			.fancybox:hover {
-				opacity: 1;
+				opacity: .8;
 			}
 		</style>
 		<? } else { ?>
@@ -69,13 +69,12 @@ require_once "topfile-head.php";
 		if ($num_rows>=1) { ?>
 
 				<? while ($myrow =$result1->fetch_object()) { ?>
-				<li data-id="id-2" data-type="category2" class="two columns"
-					style="width:125px; height:90px; margin-left:0; margin-right:1px;  margin-bottom:1px;">
+				<li data-id="id-2" data-type="category2">
 					<div class="hover-item">
 						<div class="view view-first">
 							<a href="/ckfinder/userfiles/images/gallery_photos/<?=$myrow->photo;?>" class="fancybox"
 								rel="gallery1"
-								style="width:125px; display:block; height:90px; background: url('/ckfinder/userfiles/images/gallery_photos/<?=$myrow->photo;?>') center center;  background-size:cover;"></a>
+								style=" display:block;width:100%;height:300px;  background: url('/ckfinder/userfiles/images/gallery_photos/<?=$myrow->photo;?>') center center;  background-size:cover;"></a>
 						</div>
 					</div>
 				</li>
@@ -136,7 +135,7 @@ require_once "topfile-head.php";
 			<div class="sidebar-item  m-bot-35">
 
 				<div class="caption-container-main m-bot-30">
-					<div class="caption-text-container">Наша фотогалерея</div>
+					<div class="caption-text-container">фотогалерея</div>
 					<div class="content-container-white caption-bg "></div>
 				</div>
 
