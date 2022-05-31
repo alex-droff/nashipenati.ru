@@ -12,8 +12,9 @@
 <!-- HEADER -->
 <header id="header">
 	<div class="top_menu">
+    <a href="/" class="site_logo desk"></a>
     <div class="lk_butt">
-      <a href="/" class="site_logo"></a>
+      <a href="/" class="site_logo mob"></a>
       <a class="secondlabellogo" target="_blank" href="https://new.iblschool.ru/"></a>
     </div>
     
