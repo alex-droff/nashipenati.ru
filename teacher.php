@@ -169,6 +169,39 @@ if (isset($_SESSION['id'])) {
 		.employee-info ul{
 			padding: 0;
 		}
+		@media all and (max-width:768px){
+			.frame_window {
+				padding: 1rem;
+			}
+			.frame_window h3{
+			margin: 0 0 .4rem;
+			font-size: 1.1rem;
+		}
+
+		.frame_window h4{
+			margin: 0;
+			font-size: .7rem;
+			line-height: 1.2;
+		}
+		.employee-title {
+			display: grid;
+			grid-template-columns: 40% auto;
+			background: url(../images/i-2021/curve.svg) bottom 0px left 0px repeat-x;
+			gap: .5rem;
+			background-size: auto 20px;
+			padding-bottom: 40px;
+		}
+		.employee_pic {
+			border-radius: 50%;
+			height: 90px;
+			width: 90px;
+		}
+		.employee-info p,
+		.employee-info li{
+			line-height: 1.4;
+			font-size: .8rem;
+		}
+		}
 	</style>
 
 	<!-- Google Tag Manager (noscript) -->
