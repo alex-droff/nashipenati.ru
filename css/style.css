@@ -5150,7 +5150,7 @@ a:hover {
         margin: 0px;
         padding: 0px;
         right: 10px;
-        bottom: 40px;
+        bottom: 32px;
         position: fixed;
     }
     .lp-title-cont {
@@ -6022,7 +6022,8 @@ not all {
         float: none;
         padding-bottom: 15px;
         padding-top: 5px;
-        margin-left: 20%;
+        padding-left: 15px;
+        margin-left: 0
     }
     .block-4-col img {
         display: none;

@@ -629,8 +629,10 @@ a:hover {
 } */
 
 .container .four.columns.carousel_item:nth-of-type(2n),
-.container .four.columns.carousel_item:hover {
+.container .four.columns.carousel_item:hover,
+.container .four.columns.carousel_item {
     background: #f3efe8;
+    border-radius: 0;
 }
 
 
@@ -699,10 +701,11 @@ a:hover {
 @media all and (max-width:1400px) {
     .container .four.columns.carousel_item {
         width: 270px;
+        padding: 1rem;
     }
     .lp-item-caption-container a,
     .lp-item-caption-container a:hover {
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -1435,6 +1438,9 @@ ul.footer-contact-info li a:hover {
     .slider-1 .flexslider {
         display: block;
     }
+    .main_field {
+        max-width: 100vw;
+    }
     /* .top_menu {
         display: grid;
         grid-template-columns: 22% 55% auto;
@@ -1748,8 +1754,8 @@ ul.footer-contact-info li a:hover {
         margin-bottom: 2rem;
     }
     .blog-item .blog-item-text-container>h3 {
-        font-size: 1.4rem;
-        margin-bottom: .5em;
+        font-size: 1.6rem;
+        margin-bottom: .8em;
     }
     .blog-item .blog-item-text-container ul {
         padding-left: 15px;
@@ -1887,7 +1893,7 @@ ul.footer-contact-info li a:hover {
     } */
     /* -------PARTNERS----- */
     .container.container-partners {
-        padding: 3rem 0;
+        padding: 3rem 0 1rem;
     }
     .container-partners .row {
         display: flex;
@@ -1931,11 +1937,34 @@ ul.footer-contact-info li a:hover {
         position: relative;
         padding-right: 0;
     }
+    .footer-grid ul.list1 {
+        display: none;
+    }
     .footer-copyright-container {
-        text-align: center !important;
-        color: #232323;
+        text-align: left!important;
+        color: #f3efe8;
+        padding-left: 15px;
+        font-size: .6rem;
         margin-top: 0px;
         float: none;
+        padding-right: 8rem;
+    }
+    ul.footer-contact-info li:last-of-type {
+        margin: 0px 0px 0px 16px;
+        padding: 0px 15px 0;
+        min-height: 0;
+    }
+    .footer-grid h3 {
+        color: white;
+        text-transform: lowercase;
+        padding-bottom: 0;
+        font-size: 1em;
+        margin-bottom: 0;
+        margin-top: .3rem;
+    }
+    .footer-grid h3 a {
+        text-transform: lowercase;
+        text-decoration: none;
     }
     .row {
         margin-right: 0;
@@ -1953,7 +1982,7 @@ ul.footer-contact-info li a:hover {
         margin-right: 0;
     }
     .blog-item .blog-item-text-container iframe {
-        max-width: 100%;
+        max-width: 360px;
         max-height: 54vw;
         margin: 1em 0;
     }

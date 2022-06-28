@@ -135,7 +135,7 @@
 		}
 
 		.formrequest button#send {
-			padding: 0 30px;
+			padding: 0 30px 7px;
 			height: 40px;
 			display: flex;
 			font-family: 'Phenomena';
@@ -164,6 +164,11 @@
 			.formrequest {
 				max-width: 100%;
 				margin: 0 auto;
+			}
+			.request_form h2{
+				font-size: 2.2rem;
+				max-width: 100%;
+				margin: 0 auto 1rem;
 			}
 		}
 
