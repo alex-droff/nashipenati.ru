@@ -57,16 +57,30 @@ require_once "topfile-head.php"; ?>
 				</div>
 			</div>
 			<!-- /DIRECTIONS -->
-			<!-- SLIDER -->
-			<div class="slider-1">
+			<!-- SLIDER desktop-->
+			<div class="slider-1 sl_dsk">
 				<div class="flex-container">
 					<div class="flexslider loading">
 						<ul class="slides">
-							<li style="background-image:url(images/sliders/slider-1/slide-0522.png);"></li>
+							<? for($i=1;$i<=4;$i++){?>
+							<li style="background-image:url(images/sliders/mshso0822/mshso0822-0<?=$i?>.png);"></li>
+							<?}?>
 						</ul>
 					</div>
 				</div>
-			</div><!-- End slider -->
+			</div><!-- End slider desktop -->
+			<!-- SLIDER mobile-->
+			<div class="slider-1 sl_mob">
+				<div class="flex-container">
+					<div class="flexslider loading">
+						<ul class="slides">
+							<? for($i=1;$i<=4;$i++){?>
+							<li style="background-image:url(images/sliders/mshso0822/mshso0822-0<?=$i?>-m.png);"></li>
+							<?}?>
+						</ul>
+					</div>
+				</div>
+			</div><!-- End slider desktop -->
 
 			<? /* ?>
 			<!-- mobile slider -->

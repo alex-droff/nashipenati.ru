@@ -453,6 +453,14 @@ a:hover {
     min-height: 568px;
 }
 
+.sl_mob {
+    display: none !important;
+}
+
+.sl_dsk {
+    display: block !important;
+}
+
 
 /* Стрелки слайдера */
 
@@ -522,7 +530,7 @@ a:hover {
 
 .container.news-block {
     width: 1160px;
-    padding: 32rem 0 9rem;
+    padding: 32rem 0 4.5rem;
     background: url("../images/i-2021/news_collage.png") left 9rem top no-repeat;
     background-size: contain;
 }
@@ -1593,12 +1601,18 @@ ul.footer-contact-info li a:hover {
         background-position: left 50%;
         background-repeat: no-repeat;
         background-size: cover;
-        min-height: 250px;
+        min-height: 142vw;
     }
     .slider-1 .flex-container {
         margin-bottom: 0;
         margin-top: 0;
         position: relative;
+    }
+    .sl_dsk {
+        display: none !important;
+    }
+    .sl_mob {
+        display: block !important;
     }
     .zao_edu .container {
         width: 100%;
@@ -1926,16 +1940,24 @@ ul.footer-contact-info li a:hover {
     }
     /* ---FOOTER--- */
     .footer .container {
-        display: flex;
+        display: grid;
         flex-wrap: wrap;
-        justify-content: space-between;
+        grid-template-areas: ". b" ". b" ". b" ". b";
+        gap: 0;
     }
     .footer-grid {
-        width: 100%;
         margin-right: 0;
         float: none;
         position: relative;
         padding-right: 0;
+        width: 100%;
+    }
+    .footer-grid.last_grid {
+        grid-area: b;
+        margin-right: 0;
+        position: relative;
+        padding-right: 0;
+        padding-top: 0;
     }
     .footer-grid ul.list1 {
         display: none;
@@ -1949,8 +1971,15 @@ ul.footer-contact-info li a:hover {
         float: none;
         padding-right: 8rem;
     }
+    #footer-nav .footer-menu li a {
+        padding: 0px 0px;
+        color: rgb(200, 200, 200);
+    }
+    ul.footer-contact-info li.footer-phone {
+        min-height: 0;
+    }
     ul.footer-contact-info li:last-of-type {
-        margin: 0px 0px 0px 16px;
+        margin: 0px 0px 0px 8px;
         padding: 0px 15px 0;
         min-height: 0;
     }
@@ -1959,12 +1988,15 @@ ul.footer-contact-info li a:hover {
         text-transform: lowercase;
         padding-bottom: 0;
         font-size: 1em;
-        margin-bottom: 0;
-        margin-top: .3rem;
+        margin-bottom: 1.2em;
+        margin-top: 0;
+        line-height: 1.2;
     }
     .footer-grid h3 a {
         text-transform: lowercase;
         text-decoration: none;
+        padding-bottom: 1em;
+        line-height: 1.2;
     }
     .row {
         margin-right: 0;

@@ -156,7 +156,7 @@
 
 		@media all and (max-width:768px){
 			.request_form {
-				padding: 3rem 1rem 0;
+				padding: 1rem 1rem 0;
 				width: 90% !important;
 				margin: 0 auto;
 			}
@@ -166,9 +166,13 @@
 				margin: 0 auto;
 			}
 			.request_form h2{
-				font-size: 2.2rem;
+				font-size: 1.5rem;
 				max-width: 100%;
 				margin: 0 auto 1rem;
+			}
+			.request_form h4 {
+				max-width: 100%;
+				font-size: 13px;
 			}
 		}
 
