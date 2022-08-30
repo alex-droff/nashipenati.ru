@@ -466,8 +466,6 @@ a:hover {
 
 .flex-direction-nav {
     overflow: hidden;
-    display: none;
-    /* temporary */
 }
 
 .slider-1 .flex-direction-nav li .flex-prev {
